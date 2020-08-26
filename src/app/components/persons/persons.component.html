@@ -1,1 +1,18 @@
-<p>persons works!</p>
+<table class="table table-striped">
+    <thead>
+        <tr class="bg-warning">
+            <th scope="col">Nombre</th>
+            <th scope="col">Patronus</th>
+            <th scope="col">Edad</th>
+            <th scope="col">Imagen</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let person of listPersons">
+            <td>{{ person.name }}</td>
+            <td>{{ person.patronus }}</td>
+            <td>{{ person.age }}</td>
+            <td><img class="person__image" [src]="person.image" /></td>
+        </tr>
+    </tbody>
+</table>

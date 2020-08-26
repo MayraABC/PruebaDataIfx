@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Person } from '../../interfaces/person';
 
 @Component({
   selector: 'app-persons',
   templateUrl: './persons.component.html',
-  styleUrls: ['./persons.component.scss']
+  styleUrls: ['./persons.component.scss'],
 })
 export class PersonsComponent implements OnInit {
+  @Input() listPersons: Person[] = [];
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
