@@ -1,1 +1,12 @@
-<p>fraternities works!</p>
+<div class="input-group mb-3 house__select">
+    <div class="input-group-prepend">
+        <label class="input-group-text" for="inputGroupSelect01">Casas de hechicería</label
+    >
+  </div>
+  <select class="custom-select" (click)="onChangeHouse($event)">
+    <option *ngFor="let house of housesArray">
+      {{ house.value }}
+    </option>
+  </select>
+</div>
+<hr />

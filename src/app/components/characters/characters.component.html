@@ -1,1 +1,3 @@
-<p>characters works!</p>
+<app-fraternities (changeHouse)="getCharacters($event)"></app-fraternities>
+<h2>Listado de personajes</h2>
+<app-persons [listPersons]="listCharacters"></app-persons>
