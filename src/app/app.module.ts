@@ -11,6 +11,7 @@ import { FraternitiesComponent } from './components/fraternities/fraternities.co
 import { PersonsComponent } from './components/persons/persons.component';
 import { ProfessorsComponent } from './components/professors/professors.component';
 import { StudentsComponent } from './components/students/students.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,12 @@ import { StudentsComponent } from './components/students/students.component';
     ProfessorsComponent,
     StudentsComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
